@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+  background: #eef3f5;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1f2f39, #203642);
+  color: white;
+  padding: 24px 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-logo {
+  font-size: 42px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  color: #b9c8d1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.admin-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.admin-link.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-left: 3px solid #8cc8ff;
+}
+
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-topbar {
+  height: 70px;
+  background: #ffffff;
+  border-bottom: 1px solid #dce5ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+}
+
+.admin-top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8c98a4;
+  font-size: 15px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #4d9cff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.admin-breadcrumb {
+  background: #eef3f5;
+  border-top: 1px solid #dce5ea;
+  border-bottom: 1px solid #dce5ea;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: flex-end;
+  color: #8a97a2;
+  font-size: 14px;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 22px;
+  background: #eef3f5;
+}
+
+.page-title {
+  font-size: 30px;
+  color: #4f5d6a;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.welcome-box {
+  background: #ffffff;
+  border: 1px solid #e5ecef;
+  padding: 18px;
+  color: #7b8791;
+  font-size: 15px;
+}
+
+.admin-footer {
+  background: #ffffff;
+  border-top: 1px solid #dce5ea;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  color: #9aa7b2;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    width: 210px;
+  }
+
+  .admin-logo {
+    font-size: 34px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-shell {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

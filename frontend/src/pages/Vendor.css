@@ -1,0 +1,154 @@
+.vendors-page {
+  width: 100%;
+}
+
+.vendors-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.vendors-main-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #4f5e6a;
+}
+
+.vendors-breadcrumb {
+  font-size: 15px;
+  color: #7d8a95;
+}
+
+.vendors-card {
+  background: #fff;
+  border: 1px solid #e3eaee;
+  border-radius: 4px;
+  padding: 18px 18px 30px;
+}
+
+.vendors-card-top {
+  margin-bottom: 14px;
+}
+
+.vendors-card-top h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4f5e6a;
+}
+
+.vendor-error-text {
+  color: red;
+  margin-bottom: 12px;
+}
+
+.vendors-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.vendors-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vendors-table thead tr {
+  background: #1f303a;
+}
+
+.vendors-table th {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 14px;
+  white-space: nowrap;
+}
+
+.vendors-table td {
+  padding: 16px 14px;
+  border-bottom: 1px solid #edf1f4;
+  font-size: 15px;
+  color: #667684;
+}
+
+.vendor-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+}
+
+.vendor-status.approved {
+  background: #18c96e;
+}
+
+.vendor-status.rejected {
+  background: #ff4f63;
+}
+
+.vendor-status.pending {
+  background: #f5b942;
+}
+
+.vendor-actions-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vendor-action {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-style: italic;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.vendor-action.approve {
+  color: #26c76f;
+}
+
+.vendor-action.reject {
+  color: #ff6c7a;
+}
+
+.vendors-pagination-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.vendors-page-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #dfe6eb;
+  background: #fff;
+  color: #99a6b2;
+  cursor: pointer;
+}
+
+.active-page {
+  background: #f7f9fb;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .vendors-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .vendors-main-title {
+    font-size: 28px;
+  }
+
+  .vendors-card-top h3 {
+    font-size: 24px;
+  }
+}

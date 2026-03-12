@@ -1,0 +1,129 @@
+.vendor-rfp-page {
+  padding: 24px;
+  background: #eef3f5;
+  min-height: calc(100vh - 64px);
+}
+
+.vendor-rfp-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.vendor-rfp-main-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.vendor-rfp-breadcrumb {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.vendor-rfp-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.vendor-rfp-card-top h3 {
+  font-size: 22px;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.vendor-rfp-error {
+  color: #dc2626;
+  margin-bottom: 12px;
+}
+
+.vendor-rfp-table-wrap {
+  overflow-x: auto;
+}
+
+.vendor-rfp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vendor-rfp-table thead th {
+  background: #22313c;
+  color: white;
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vendor-rfp-table tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #475569;
+  font-size: 14px;
+}
+
+.vendor-rfp-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.vendor-rfp-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.vendor-rfp-status.open {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.vendor-rfp-status.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.vendor-rfp-action {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vendor-rfp-action.apply {
+  color: #22c55e;
+}
+
+.vendor-rfp-action.apply:hover {
+  color: #16a34a;
+}
+
+.vendor-rfp-action.applied {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.vendor-rfp-pagination-box {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.vendor-rfp-page-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #64748b;
+  border-radius: 4px;
+}
+
+.vendor-rfp-page-btn.active-page {
+  background: #f8fafc;
+}
