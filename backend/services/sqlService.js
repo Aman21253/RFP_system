@@ -133,6 +133,7 @@ async function detectQueryType(question) {
         "list",
         "show",
         "count",
+        "total",
         "how many",
         "assigned",
         "open",
@@ -187,6 +188,10 @@ Important rules:
 - If RFP title is needed, use rfps.title
 - If admin data is needed, use admins table
 - Use explicit JOINs
+- If the user asks for total vendors, count vendors using: SELECT COUNT(*) AS total_vendors FROM vendors
+- If the user asks for total rfps, count rfps using: SELECT COUNT(*) AS total_rfps FROM rfps
+- If the user asks for total quotes, count quotes using: SELECT COUNT(*) AS total_quotes FROM quotes
+- For "how many" or "total" questions, prefer COUNT(*)
 
 User question:
 ${question}

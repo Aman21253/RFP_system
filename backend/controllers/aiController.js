@@ -25,9 +25,31 @@ async function askAssistant(req, res, next) {
             const sql = await generateSqlFromQuestion(question);
             console.log("Generated SQL:", sql);
 
-            const rows = await runSql(sql);
-            console.log("SQL rows:", rows);
-            const answer = await summarizeSqlResult(question, sql, rows);
+            let rows;
+            try {
+                rows = await runSql(sql);
+                console.log("SQL rows:", rows);
+            } catch (error) {
+                return res.status(400).json({
+                    success: false,
+                    type: "SQL",
+                    sql,
+                    message: error.message,
+                });
+            }
+
+            let answer;
+            try {
+                answer = await summarizeSqlResult(question, sql, rows);
+            } catch (error) {
+                return res.status(400).json({
+                    success: false,
+                    type: "SQL",
+                    sql,
+                    data: rows,
+                    message: `Summary generation failed: ${error.message}`,
+                });
+            }
 
             return res.json({
                 success: true,
