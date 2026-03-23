@@ -44,6 +44,9 @@ function AdminLayout() {
           <NavLink to="/admin-dashboard/categories" className="admin-link">
             <FaCog /> <span>Categories</span>
           </NavLink>
+           <NavLink to="/admin-dashboard/ai-assistant" className="admin-link">
+            < FaTable /> <span>AI Assistant</span>
+          </NavLink>
         </nav>
       </aside>
 

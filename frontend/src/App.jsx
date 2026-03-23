@@ -13,6 +13,7 @@ import VendorDashboard from "./pages/VenodeDashboard";
 import VendorRfpList from "./pages/VendorRfpList";
 import ApplyQuote from "./pages/ApplyQuote";
 import VendorQuotes from "./pages/VendorQuote";
+import AiAssistant from "./pages/AiAssistant";
 
 function ProtectedRoute({ children, allowedRole }) {
   const token = localStorage.getItem("token");
@@ -50,6 +51,7 @@ function App() {
           <Route path="rfp-quotes" element={<RfpQuotes />} />
           <Route path="categories" element={<Categories />} />
           <Route path="add-rfp" element={<AddRfp />} />
+          <Route path="ai-assistant" element={<AiAssistant />} />
         </Route>
         <Route
           path="/vendor-dashboard"
